@@ -1,30 +1,24 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
 import {
-  Text,
-  View,
+  TouchableOpacity,
   StyleSheet,
   Image,
+  View,
+  Text,
   Button,
-  TouchableOpacity,
 } from 'react-native';
+
 import {RNCamera} from 'react-native-camera';
 
 const PendingView = () => (
-  <View>
-    style=
-    {{
+  <View
+    style={{
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-    }}
-    <Text
-      style={{
-        fontSize: 30,
-        color: 'red',
-      }}>
-      Loading....
-    </Text>
+    }}>
+    <Text style={{fontSize: 30, color: 'red'}}>Loading...</Text>
   </View>
 );
 
@@ -45,12 +39,17 @@ const ProfilePic = () => {
     <View style={styles.container}>
       {image ? (
         <View style={styles.preview}>
-          <Text style={styles.camtext}>Here is Your new Profile Pic</Text>
+          <Text style={styles.camtext}>Here is your new profile pic</Text>
           <Image
             style={styles.clicked}
-            source={{uri: image, width: '100%', height: '100%'}}
+            source={{uri: image, width: '100%', height: '80%'}}
           />
-          <Button onPress={() => setImage(null)} title="Click New Image" />
+          <Button
+            title="CLick new Image"
+            onPress={() => {
+              setImage(null);
+            }}
+          />
         </View>
       ) : (
         <RNCamera
