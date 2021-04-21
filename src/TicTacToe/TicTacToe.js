@@ -108,7 +108,7 @@ const TicTacToe = () => {
     <Container style={{backgroundColor: '333945', padding: 5}}>
       <Header>
         <Body>
-          <Title>LCO TicTacToe</Title>
+          <Title>Tic Tac Toe</Title>
         </Body>
       </Header>
       <Content>

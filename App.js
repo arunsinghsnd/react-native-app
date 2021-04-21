@@ -15,6 +15,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './src/Netflix/Screens/Home';
 import Add from './src/Netflix/Screens/Add';
 import Edit from './src/Netflix/Screens/Edit';
+import MainScreen from './src/MainScreen';
 
 const Stack = createStackNavigator();
 
@@ -28,7 +29,22 @@ const App = () => {
       {/* <ProfilePic /> */}
       {/* <FlexDirectionBasics /> */}
       {/* <TicTacToe /> */}
-      <Stack.Navigator initialRouteName="Home">
+
+      <Stack.Navigator initialRouteName="MainScreen">
+        <Stack.Screen
+          name="Main Home"
+          component={MainScreen}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Main Screen',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
         <Stack.Screen
           name="Home"
           component={Home}
@@ -65,6 +81,104 @@ const App = () => {
               backgroundColor: '#0f4c75',
             },
             title: 'Netflix App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="TicTacToe"
+          component={TicTacToe}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Tic Tac Toe App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="FlexDirectionBasics"
+          component={FlexDirectionBasics}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Flex Direction App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ProfilePic"
+          component={ProfilePic}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Profile Pic App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="CurrenceyApp"
+          component={CurrenceyApp}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Currencey App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="SpanishNumber"
+          component={SpanishNumber}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Spanish Number App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="RollerDice"
+          component={RollerDice}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'RollerDice App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="TapMe"
+          component={TapMe}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'TapMe App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',
