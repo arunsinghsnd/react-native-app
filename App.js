@@ -50,7 +50,7 @@ const App = () => {
             headerStyle: {
               backgroundColor: '#0f4c75',
             },
-            title: 'LOC Netflix App',
+            title: 'Netflix App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',
@@ -64,7 +64,7 @@ const App = () => {
             headerStyle: {
               backgroundColor: '#0f4c75',
             },
-            title: 'LOC Netflix App',
+            title: 'Netflix App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',
