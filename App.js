@@ -5,6 +5,7 @@ import ProfilePic from './src/ProfilePic';
 import RollerDice from './src/RollerDice';
 import SpanishNumber from './src/SpanishNumber';
 import TapMe from './src/TapMe';
+import TicTacToe from './src/TicTacToe/TicTacToe';
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       {/* <RollerDice /> */}
       {/* <SpanishNumber /> */}
       {/* <CurrenceyApp /> */}
-      <ProfilePic />
+      {/* <ProfilePic /> */}
       {/* <FlexDirectionBasics /> */}
+      <TicTacToe />
     </>
   );
 };
