@@ -123,8 +123,8 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   clicked: {
-    width: 300,
-    height: 300,
-    borderRadius: 150,
+    width: 500,
+    height: 500,
+    borderRadius: 80,
   },
 });
