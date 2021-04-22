@@ -17,6 +17,8 @@ import Add from './src/Netflix/Screens/Add';
 import Edit from './src/Netflix/Screens/Edit';
 import MainScreen from './src/MainScreen';
 import WebRequest from './src/WebRequest/WebRequest';
+import JokeRequest from './src/JokeRequest/JokeRequest';
+import GithubRequest from './src/GithubInfo/GithubRequest';
 
 const Stack = createStackNavigator();
 
@@ -193,6 +195,34 @@ const App = () => {
               backgroundColor: '#0f4c75',
             },
             title: 'Web Request App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="JokeRequest"
+          component={JokeRequest}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Joke Request App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="GithubRequest"
+          component={GithubRequest}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'GitHub User Info App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',

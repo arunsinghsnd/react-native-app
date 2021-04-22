@@ -11,8 +11,22 @@ const MainScreen = ({navigation, route}) => {
         style={styles.btn}
         rounded
         block
+        onPress={() => navigation.navigate('GithubRequest')}>
+        <Text style={{color: '#eee'}}>Github User Info Request App</Text>
+      </Button>
+      <Button
+        style={styles.btn}
+        rounded
+        block
+        onPress={() => navigation.navigate('JokeRequest')}>
+        <Text style={{color: '#eee'}}>Joke Request App</Text>
+      </Button>
+      <Button
+        style={styles.btn}
+        rounded
+        block
         onPress={() => navigation.navigate('WebRequest')}>
-        <Text style={{color: '#eee'}}>Web Request App</Text>
+        <Text style={{color: '#eee'}}>User Request App</Text>
       </Button>
       <Button
         style={styles.btn}
