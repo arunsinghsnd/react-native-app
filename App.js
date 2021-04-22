@@ -16,6 +16,7 @@ import Home from './src/Netflix/Screens/Home';
 import Add from './src/Netflix/Screens/Add';
 import Edit from './src/Netflix/Screens/Edit';
 import MainScreen from './src/MainScreen';
+import WebRequest from './src/WebRequest/WebRequest';
 
 const Stack = createStackNavigator();
 
@@ -29,7 +30,6 @@ const App = () => {
       {/* <ProfilePic /> */}
       {/* <FlexDirectionBasics /> */}
       {/* <TicTacToe /> */}
-
       <Stack.Navigator initialRouteName="MainScreen">
         <Stack.Screen
           name="Main Home"
@@ -179,6 +179,20 @@ const App = () => {
               backgroundColor: '#0f4c75',
             },
             title: 'TapMe App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="WebRequest"
+          component={WebRequest}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Web Request App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',

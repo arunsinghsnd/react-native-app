@@ -11,6 +11,13 @@ const MainScreen = ({navigation, route}) => {
         style={styles.btn}
         rounded
         block
+        onPress={() => navigation.navigate('WebRequest')}>
+        <Text style={{color: '#eee'}}>Web Request App</Text>
+      </Button>
+      <Button
+        style={styles.btn}
+        rounded
+        block
         onPress={() => navigation.navigate('Home')}>
         <Text style={{color: '#eee'}}>Netflix App</Text>
       </Button>
