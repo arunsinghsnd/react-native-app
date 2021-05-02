@@ -19,6 +19,8 @@ import MainScreen from './src/MainScreen';
 import WebRequest from './src/WebRequest/WebRequest';
 import JokeRequest from './src/JokeRequest/JokeRequest';
 import GithubRequest from './src/GithubInfo/GithubRequest';
+import Search from './src/GithubInfo/Screens/Search';
+import ShowProfile from './src/GithubInfo/Screens/ShowProfile';
 
 const Stack = createStackNavigator();
 
@@ -216,13 +218,27 @@ const App = () => {
           }}
         />
         <Stack.Screen
-          name="GithubRequest"
-          component={GithubRequest}
+          name="Search"
+          component={Search}
           options={{
             headerStyle: {
               backgroundColor: '#0f4c75',
             },
             title: 'GitHub User Info App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ShowProfile"
+          component={ShowProfile}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'GitHub User Show Profile Info App',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',

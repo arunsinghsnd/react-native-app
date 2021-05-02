@@ -11,7 +11,7 @@ const MainScreen = ({navigation, route}) => {
         style={styles.btn}
         rounded
         block
-        onPress={() => navigation.navigate('GithubRequest')}>
+        onPress={() => navigation.navigate('Search')}>
         <Text style={{color: '#eee'}}>Github User Info Request App</Text>
       </Button>
       <Button
