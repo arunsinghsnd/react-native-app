@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {Image, TouchableOpacity, Text, View, StyleSheet} from 'react-native';
-import DiceOne from '../assets/dice1.png';
-import DiceTwo from '../assets/dice2.png';
-import DiceThree from '../assets/dice3.png';
-import DiceFour from '../assets/dice4.png';
-import DiceFive from '../assets/dice5.png';
-import DiceSix from '../assets/dice6.png';
+import DiceOne from '../../assets/dice1.png';
+import DiceTwo from '../../assets/dice2.png';
+import DiceThree from '../../assets/dice3.png';
+import DiceFour from '../../assets/dice4.png';
+import DiceFive from '../../assets/dice5.png';
+import DiceSix from '../../assets/dice6.png';
 
 const RollerDice = () => {
   const [uri, setUri] = useState(DiceOne);

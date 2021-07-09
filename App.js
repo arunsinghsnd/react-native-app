@@ -1,10 +1,10 @@
 import React from 'react';
-import CurrenceyApp from './src/CurrenceyApp';
+import CurrenceyApp from './src/CurrenceyApp/CurrenceyApp';
 import FlexDirectionBasics from './src/FlexDirection/FlexDirectionBasics';
-import ProfilePic from './src/ProfilePic';
-import RollerDice from './src/RollerDice';
-import SpanishNumber from './src/SpanishNumber';
-import TapMe from './src/TapMe';
+import ProfilePic from './src/ProfilePic/ProfilePic';
+import RollerDice from './src/RollerDice/RollerDice';
+import SpanishNumber from './src/SpanishNumber/SpanishNumber';
+import TapMe from './src/TapMe/TapMe';
 import TicTacToe from './src/TicTacToe/TicTacToe';
 
 import 'react-native-gesture-handler';
@@ -21,6 +21,7 @@ import JokeRequest from './src/JokeRequest/JokeRequest';
 import GithubRequest from './src/GithubInfo/GithubRequest';
 import Search from './src/GithubInfo/Screens/Search';
 import ShowProfile from './src/GithubInfo/Screens/ShowProfile';
+import FlexApp from './src/FlexApp/FlexApp';
 
 const Stack = createStackNavigator();
 
@@ -239,6 +240,20 @@ const App = () => {
               backgroundColor: '#0f4c75',
             },
             title: 'GitHub User Show Profile Info App',
+            headerTitleStyle: {
+              textAlign: 'center',
+              color: '#00b7c2',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="FlexApp"
+          component={FlexApp}
+          options={{
+            headerStyle: {
+              backgroundColor: '#0f4c75',
+            },
+            title: 'Flex App Demo',
             headerTitleStyle: {
               textAlign: 'center',
               color: '#00b7c2',

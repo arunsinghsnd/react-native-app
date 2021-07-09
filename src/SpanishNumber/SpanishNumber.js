@@ -11,16 +11,16 @@ import {
 import Sound from 'react-native-sound';
 
 const soundList = [
-  require('../assets/one.wav'),
-  require('../assets/two.wav'),
-  require('../assets/three.wav'),
-  require('../assets/four.wav'),
-  require('../assets/five.wav'),
-  require('../assets/six.wav'),
-  require('../assets/seven.wav'),
-  require('../assets/eight.wav'),
-  require('../assets/nine.wav'),
-  require('../assets/ten.wav'),
+  require('../../assets/one.wav'),
+  require('../../assets/two.wav'),
+  require('../../assets/three.wav'),
+  require('../../assets/four.wav'),
+  require('../../assets/five.wav'),
+  require('../../assets/six.wav'),
+  require('../../assets/seven.wav'),
+  require('../../assets/eight.wav'),
+  require('../../assets/nine.wav'),
+  require('../../assets/ten.wav'),
 ];
 
 const SpanishNumber = () => {
@@ -40,7 +40,7 @@ const SpanishNumber = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <Image style={styles.logo} source={require('../assets/logo.png')} />
+      <Image style={styles.logo} source={require('../../assets/logo.png')} />
       <View style={styles.gridContainer}>
         {soundList.map(sound => (
           <TouchableOpacity

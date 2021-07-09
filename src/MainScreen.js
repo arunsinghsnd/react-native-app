@@ -11,6 +11,13 @@ const MainScreen = ({navigation, route}) => {
         style={styles.btn}
         rounded
         block
+        onPress={() => navigation.navigate('FlexApp')}>
+        <Text style={{color: '#eee'}}>Flex App Demo</Text>
+      </Button>
+      <Button
+        style={styles.btn}
+        rounded
+        block
         onPress={() => navigation.navigate('Search')}>
         <Text style={{color: '#eee'}}>Github User Info Request App</Text>
       </Button>
